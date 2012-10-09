@@ -42,7 +42,7 @@ setup(name='trytond_sale_invoice_cancel',
     ],
     package_data={
         'trytond.modules.sale_invoice_cancel': info.get('xml', []) \
-            + ['tryton.cfg', 'locale/*.po'],
+            + ['tryton.cfg'],
     },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
