@@ -35,13 +35,13 @@ setup(name='trytonzz_sale_invoice_cancel',
     url='http://www.zikzakmedia.com',
     download_url="http://downloads.tryton.org/" + \
             info.get('version', '0.0.1').rsplit('.', 1)[0] + '/',
-    package_dir={'trytonzz.modules.sale_invoice_cancel': '.'},
+    package_dir={'trytond.modules.sale_invoice_cancel': '.'},
     packages=[
-        'trytonzz.modules.sale_invoice_cancel',
-        'trytonzz.modules.sale_invoice_cancel.tests',
+        'trytond.modules.sale_invoice_cancel',
+        'trytond.modules.sale_invoice_cancel.tests',
     ],
     package_data={
-        'trytonzz.modules.sale_invoice_cancel': info.get('xml', []) \
+        'trytond.modules.sale_invoice_cancel': info.get('xml', []) \
             + ['tryton.cfg'],
     },
     classifiers=[
@@ -64,9 +64,9 @@ setup(name='trytonzz_sale_invoice_cancel',
     install_requires=requires,
     zip_safe=False,
     entry_points="""
-    [trytonzz.modules]
-    sale_invoice_cancel = trytonzz.modules.sale_invoice_cancel
+    [trytond.modules]
+    sale_invoice_cancel = trytond.modules.sale_invoice_cancel
     """,
     test_suite='tests',
-    test_loader='trytonzz.test_loader:Loader',
+    test_loader='trytond.test_loader:Loader',
 )
