@@ -27,7 +27,7 @@ for dep in info.get('depends', []):
 requires.append('trytond >= %s.%s, < %s.%s' %
         (major_version, minor_version, major_version, minor_version + 1))
 
-setup(name='trytond_sale_invoice_cancel',
+setup(name='trytonzz_sale_invoice_cancel',
     version=info.get('version', '0.0.1'),
     description='Tryton module for cancel invoices from sale and reopen',
     author='Zikzakmedia SL',
@@ -35,13 +35,13 @@ setup(name='trytond_sale_invoice_cancel',
     url='http://www.zikzakmedia.com',
     download_url="http://downloads.tryton.org/" + \
             info.get('version', '0.0.1').rsplit('.', 1)[0] + '/',
-    package_dir={'trytond.modules.sale_invoice_cancel': '.'},
+    package_dir={'trytonzz.modules.sale_invoice_cancel': '.'},
     packages=[
-        'trytond.modules.sale_invoice_cancel',
-        'trytond.modules.sale_invoice_cancel.tests',
+        'trytonzz.modules.sale_invoice_cancel',
+        'trytonzz.modules.sale_invoice_cancel.tests',
     ],
     package_data={
-        'trytond.modules.sale_invoice_cancel': info.get('xml', []) \
+        'trytonzz.modules.sale_invoice_cancel': info.get('xml', []) \
             + ['tryton.cfg'],
     },
     classifiers=[
@@ -64,9 +64,9 @@ setup(name='trytond_sale_invoice_cancel',
     install_requires=requires,
     zip_safe=False,
     entry_points="""
-    [trytond.modules]
-    sale_invoice_cancel = trytond.modules.sale_invoice_cancel
+    [trytonzz.modules]
+    sale_invoice_cancel = trytonzz.modules.sale_invoice_cancel
     """,
     test_suite='tests',
-    test_loader='trytond.test_loader:Loader',
+    test_loader='trytonzz.test_loader:Loader',
 )
