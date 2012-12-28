@@ -27,14 +27,13 @@ for dep in info.get('depends', []):
 requires.append('trytond >= %s.%s, < %s.%s' %
         (major_version, minor_version, major_version, minor_version + 1))
 
-setup(name='trytonzz_sale_invoice_cancel',
+setup(name='trytonspain_sale_invoice_cancel',
     version=info.get('version', '0.0.1'),
     description='Tryton module for cancel invoices from sale and reopen',
     author='Zikzakmedia SL',
     author_email='zikzak@zikzakmedia.com',
     url='http://www.zikzakmedia.com',
-    download_url="http://downloads.tryton.org/" + \
-            info.get('version', '0.0.1').rsplit('.', 1)[0] + '/',
+    download_url="https://bitbucket.org/trytonspain/trytond-sale_invoice_cancel",
     package_dir={'trytond.modules.sale_invoice_cancel': '.'},
     packages=[
         'trytond.modules.sale_invoice_cancel',
