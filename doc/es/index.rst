@@ -4,8 +4,8 @@ Cancelar facturas de pedidos de venta
 
 Cancela facturas generadas a partir de pedidos de venta
 
-Módulos que dependen
-====================
+Módulos de los que depende
+==========================
 
 Instalados
 ----------
